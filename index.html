@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>Fellow Matcha Lover</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+		/* CSS for success and error messages */
+		#success-message, #error-message {
+			display: none;
+			margin-top: 20px;
+			padding: 10px;
+			border-radius: 5px;
+			font-weight: bold;
+		}
+
+		#success-message {
+			background-color: #a7eb9b; /* Light green */
+		}
+
+		#error-message {
+			background-color: #f18c8e; /* Light red */
+		}
+	</style>
+</head>
+<body class="is-preload">
+
+	<!-- Wrapper-->
+	<div id="wrapper">
+
+		<!-- Nav -->
+		<nav id="nav">
+			<a href="#" class="icon solid fa-home"><span>Home</span></a>
+			<a href="#Me" class="icon solid fa-folder"><span>Me</span></a>
+		</nav>
+
+		<!-- Main -->
+        <div id="main">
+
+            <!-- Me -->
+            <article id="home" class="panel intro">
+                <header>
+                    <h1>Happy Valentines Day!</h1>
+                    <p>-K </p>
+                </header>
+                <a href="#Me" class="jumplink pic">
+                    <span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+                    <img src="images/me.jpg" alt="" />
+                </a>
+            </article>
+
+            <!-- Work -->
+            <article id="Me" class="panel">
+                <header>
+                    <h2>About Me</h2>
+                </header>
+                <p>
+                    I am a very passionate person, over the past couple of years, I’ve dabbled in many areas of life such as sports, music, and tech to name a few. More recently, however, someone piqued my interest, and that’s you.
+                </p>
+                <p>
+                    Truth be told, I wanted us to get close in a way like friends do from the start. I never really expected my feelings to grow, reaching a point where it’s currently 10:28 PM as I’m making this letter, and I’m also really nervous as I anxiously triple-check every word that I write.
+                </p>
+                <p>
+                    Before I forget to introduce myself,
+                </p>
+                <p>
+                    Hi! It’s me, Kurt. I can only imagine what your reaction will be after reading that. I’m not sure if you’re surprised, but I’m willing to bet that it’s likely that you are. I mean I’m always walking on eggshells when I’m around you. This leads to us having the most awkward conversations ever t_t…
+                </p>
+                <p>
+                    One of the reasons why I’ve developed feelings for you was your smile. It’s hard to explain, but yours is very warm. Throughout my life, I’ve only felt warm smiles from a couple of people. Medyo vague siya yes, and I can explain it better, but I don’t want to bore you with all those details.
+                </p>
+                <p>
+                    Also hindi rin maayos ung transitions from paragraphs to paragraphs (medyo sabog na, maam cd kasi eh.) I don’t want to force my feelings onto you, I totally understand, and respect if you can’t reciprocate them.
+                </p>
+                <p>
+                    After this letter, I know things will change between us, for better or for worse. I’m risking it all because it’s you, and to me, you’re worth that risk.
+                </p>
+                <p>
+
+                </p>
+              
+            </article>
+
+           
+
+
+        </div>
+
+		
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<!-- JavaScript to display success and error messages -->
+	<script>
+		$(document).ready(function () {
+			// When the form is submitted
+			$("form").submit(function (e) {
+				e.preventDefault(); // Prevent default form submission
+				// Display success message
+				$("#success-message").hide();
+				$("#error-message").hide();
+				// Simulate success/failure (you should implement this based on your server-side logic)
+				var success = true; // Change this based on your server-side response
+				if (success) {
+					$("#success-message").fadeIn();
+				} else {
+					$("#error-message").fadeIn();
+				}
+				// Optional: Reset form fields
+				$("form")[0].reset();
+			});
+		});
+	</script>
+
+</body>
+</html>
